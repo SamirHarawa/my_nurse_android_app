@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.temwa.mynurse.LoginActivity" >
+    
+     <TextView
+         android:id="@+id/tvUser"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:text="@string/username" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvUser"
+        android:layout_alignStart="@+id/tvUser"
+        android:layout_below="@+id/tvUser"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/user_hint"
+        android:inputType="textPersonName" />
+
+        <requestFocus />
+  
+    <TextView
+        android:id="@+id/tvPasswrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUsername"
+        android:layout_alignStart="@+id/etUsername"
+        android:layout_below="@+id/etUsername"
+        android:text="@string/passwrd" />
+
+    <EditText
+        android:id="@+id/etPasswrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPasswrd"
+        android:layout_alignStart="@+id/tvPasswrd"
+        android:layout_below="@+id/tvPasswrd"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/pass_hint"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvattempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPasswrd"
+        android:text="@string/attempt" />
+
+    <TextView
+        android:id="@+id/tvAtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvattempt"
+        android:layout_alignBottom="@+id/tvattempt"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvattempt"
+        android:layout_alignStart="@+id/tvattempt"
+        android:layout_below="@+id/tvAtt"
+        android:layout_centerVertical="true"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/btReg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btlogin"
+        android:layout_alignStart="@+id/btlogin"
+        android:layout_below="@+id/btlogin"
+        android:layout_marginTop="5dp"
+        android:text="@string/register" />
+
+
+
+</RelativeLayout>

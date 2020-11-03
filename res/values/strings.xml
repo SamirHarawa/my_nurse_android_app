@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyNurse</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="user_hint">enter firstname</string>
+    <string name="passwrd">Password</string>
+    <string name="pass_hint">passwrd: dd/mm/yyyy</string>
+    <string name="attempt">Login Attempt</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="title_activity_add_profile">AddProfileActivity</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dob">Date of Birth</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="vprofile">View Profile</string>
+    <string name="title_activity_add_transactio">AddTransactioActivity</string>
+    <string name="drugname">Drug Name</string>
+    <string name="drugDate">Drug Date</string>
+    <string name="rvDate">Review Date</string>
+    <string name="pillCount">No. of Tablets</string>
+    <string name="dosage">No. of Tablets/ Dose</string>
+    <string name="dose">Dose</string>
+    <string name="od">OD (Once a day)</string>
+    <string name="bd">BD (Twice a day)</string>
+    <string name="td">TD (Three times a day)</string>
+    <string name="four">Four times a day</string>
+    <string name="viewTran">View Transactions</string>
+    <string name="title_activity_list_transaction">ListTransactionActivity</string>
+    <string name="title_activity_list_profile">ListProfileActivity</string>
+    <string name="title_activity_nurse">NurseActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.temwa.mynurse.NurseActivity" >
+
+    <TextView
+        android:id="@+id/tvprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/profile" />
+
+    <TextView
+        android:id="@+id/medname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvprofile"
+        android:layout_below="@+id/tvprofile"
+        android:layout_marginTop="5dp"
+        android:text="@string/drugname" />
+
+    <EditText
+        android:id="@+id/etMedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/medname"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/medname"
+        android:ems="10" >
+
+        <requestFocus  />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvPillCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etMedName"
+        android:layout_below="@+id/etMedDate"
+        android:layout_marginTop="5dp"
+        android:text="@string/pillCount" />
+
+    <EditText
+        android:id="@+id/etPillCount"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPillCount"
+        android:layout_below="@+id/tvPillCount"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvDosage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPillCount"
+        android:layout_below="@+id/etPillCount"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/dose"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvDosage" >
+
+        <RadioButton
+            android:id="@+id/rbOD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvDosage"
+            android:layout_centerVertical="true"
+            android:text="@string/od" />
+
+        <RadioButton
+            android:id="@+id/rbBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/radioGroup1"
+            android:text="@string/bd" />
+
+        <RadioButton
+            android:id="@+id/rbTD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rbOD"
+            android:layout_below="@+id/rbOD"
+            android:layout_marginLeft="0dp"
+            android:text="@string/td" />
+
+        <RadioButton
+            android:id="@+id/rbFD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rbOD"
+            android:layout_alignBottom="@+id/rbOD"
+            android:layout_alignRight="@+id/rbBD"
+            android:text="@string/four" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvMedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etMedName"
+        android:layout_below="@+id/etMedName"
+        android:text="@string/drugDate" />
+
+    <EditText
+        android:id="@+id/etMedDate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPillCount"
+        android:layout_alignRight="@+id/etPillCount"
+        android:layout_below="@+id/tvMedDate"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none"
+        android:onClick="setDate" />
+
+    <TextView
+        android:id="@+id/tvRvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etRvDate"
+        android:layout_alignBaseline="@+id/tvMedDate"
+        android:layout_alignLeft="@+id/etRvDate"
+        android:text="@string/rvDate"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="true"
+        android:onClick="showDialogOnRvDateClick" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="5dp"
+        android:text="@string/save"
+        android:onClick="save" />
+
+    <Button
+        android:id="@+id/btclear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/save"
+        android:layout_below="@+id/save"
+        android:text="@string/clear" />
+
+    <EditText
+        android:id="@+id/etRvDate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvDose"
+        android:layout_toRightOf="@+id/radioGroup1"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none"
+        android:onClick="setDate" />
+
+    <EditText
+        android:id="@+id/etDose"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvDosage"
+        android:layout_alignLeft="@+id/etRvDate"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btclear"
+        android:layout_below="@+id/btclear"
+        android:layout_marginTop="5dp"
+        android:text="@string/viewTran" />
+
+    <TextView
+        android:id="@+id/tvDose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvPillCount"
+        android:layout_alignBottom="@+id/tvPillCount"
+        android:layout_alignLeft="@+id/etRvDate"
+        android:text="@string/dosage" />
+
+</RelativeLayout>

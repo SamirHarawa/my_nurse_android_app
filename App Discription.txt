@@ -1,0 +1,14 @@
+My Nurse version 1.0
+
+the applicatoin is in production phase thus the login credentials are currently blank.
+the credentials are to safeguard the medical record on the device. In the view of confidentiality of medical records.
+
+The idea was taken on board looking at the issue of drug adherance. There is a feeling that if people are to adhere
+to the medicine they receive at the hospitals the government will reduce costs of the medication as with the 
+issue of drug resistance on the rise. The application is meant to be a nurse at home. Alerting the user of the device
+when to take medication.
+
+In the upgrade of the application, the app will be capturing symptoms everytime the user is getting medicatoin. With 
+some predefined symptom combination, the application is to be advising the user to see a medical personnel with immediate 
+effect. Another prospect is putting the application online to be updating a central server at a desinated location and a 
+medical personnel to be giving advise on the symptoms.
