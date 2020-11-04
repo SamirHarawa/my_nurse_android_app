@@ -11,6 +11,7 @@
     <string name="login">Login</string>
     <string name="register">Register</string>
     <string name="title_activity_add_profile">AddProfileActivity</string>
+    <string name="profile">Profile</string>
     <string name="fname">First Name</string>
     <string name="lname">Last Name</string>
     <string name="gender">Gender</string>
